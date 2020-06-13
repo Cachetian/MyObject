@@ -30,3 +30,9 @@ out/
 
 ### VS Code ###
 .vscode/
+
+### project
+/tmp/
+*.log
+
+### End of .gitignore
