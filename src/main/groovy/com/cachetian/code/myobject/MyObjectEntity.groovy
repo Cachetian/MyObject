@@ -8,15 +8,25 @@ import javax.persistence.Id
 import javax.persistence.Table
 
 @Entity
-@Table(name = 'my_object')
-class MyObjectEntity {
+@Table(name = 'tb_my_object')
+class MyObjectEntity extends MyObjectBase {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    Integer id
+    Long myId
 
     @Column
-    String name
+    Integer myType
 
     @Column
-    String value
+    String myGroup
+
+    @Column
+    String myCode
+
+    @Column
+    String myName
+
+    @Column
+    String myValue
+
 }
